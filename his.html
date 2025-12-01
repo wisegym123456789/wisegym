@@ -28,7 +28,7 @@
              padding 30px;
              text-align: center;
              border-radius: 10px;}
-        section{background: linear-gradient(lightskyblue,lightpink,yellow,#E0B0FF);
+        section{background: linear-gradient(limegreen,white,yellow);
                 padding: 15px;
                 margin: 20px auto;
                 width:70%;
@@ -36,7 +36,24 @@
         p{text-indent: 2em;}
 
         .zoom:hover{transform: scale(1.5); cursor:pointer;}
-                          
+
+        img:hover{animation: glowcolors 1.2s infinite alternate;}
+        @keyframes glowcolor{
+          0% {box-shadow: 0 0 20px hotpink;}
+          25% {box-shadow: 0 0 20px skyblue;}
+          50% {box-shadow: 0 0 20px gold;}
+          75% {box-shadow: 0 0 20px violet;}
+          100% {box-shadow: 0 0 20px red;}
+        }
+
+        .blink-bg{
+          animation: blinkbg 1s infinite alternate;
+          padding: 3px 6px;
+        }
+        @keyframes blinkbg{
+          0% {background: yellow;}
+          100% {background: orange;}
+        }
     </style>
   </head>
   <body background="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/1a/05/44/suphachalasai.jpg?w=900&h=-1&s=1">
@@ -62,5 +79,10 @@
     💝 ประเพณี <br><br>
     😎 ผู้จัดทำ <br><br>
   </div>
+    <section>
+      <center>
+        <h1><mark>ประวัติ</mark></h1>
+      </center>
+    </section>
   </body>
 </html>
