@@ -9,69 +9,51 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
 }
 
 /* ===== HEADER ===== */
 header {
-    background: linear-gradient(135deg, #004e92, #000428);
+    background: linear-gradient(135deg, #b31217, #e52d27);
     color: white;
     text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    padding: 60px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 header h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 42px;
 }
 
 header p {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 18px;
 }
 
-/* ===== NAVBAR ===== */
-nav {
-    position: sticky;
-    top: 0;
-    background-color: rgba(0,0,0,0.8);
-    padding: 15px;
-    text-align: center;
-    backdrop-filter: blur(5px);
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #00ffff;
-    border-bottom: 2px solid #00ffff;
-    padding-bottom: 5px;
-}
-
-/* ===== SECTION ===== */
+/* ===== SECTION CARD ===== */
 section {
     background: white;
-    margin: 30px auto;
-    padding: 30px;
     width: 85%;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
     transition: 0.3s;
 }
 
 section:hover {
-    transform: scale(1.02);
+    transform: translateY(-8px);
 }
 
 h2 {
-    color: #004e92;
+    color: #b31217;
+    border-left: 6px solid #e52d27;
+    padding-left: 10px;
+}
+
+ul {
+    line-height: 1.8;
 }
 
 img {
@@ -82,11 +64,11 @@ img {
 
 /* ===== FOOTER ===== */
 footer {
-    background: #000428;
+    background: #b31217;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 </style>
@@ -96,29 +78,15 @@ footer {
 
 <header>
     <h1>โรงเรียนสวนกุหลาบวิทยาลัย</h1>
-    <p>ด.ช.อนวัช เจียรจรูญศรี ม.201</p>
+    <p>ผลิตโดย: ชื่อ-นามสกุล นักเรียน</p>
 </header>
 
-<nav>
-    <a href="#home">หน้าแรก</a>
-    <a href="#history">ประวัติ</a>
-    <a href="#vision">วิสัยทัศน์</a>
-    <a href="#symbol">สัญลักษณ์</a>
-    <a href="#building">อาคารเรียน</a>
-    <a href="#map">แผนที่</a>
-</nav>
-
-<section id="home">
-    <h2>หน้าแรก</h2>
-    <p>ยินดีต้อนรับสู่เว็บไซต์แนะนำโรงเรียนสวนกุหลาบวิทยาลัย โรงเรียนชายล้วนแห่งแรกของประเทศไทย ที่มุ่งพัฒนาผู้เรียนให้มีความรู้ คู่คุณธรรม และความเป็นผู้นำ</p>
-</section>
-
-<section id="history">
+<section>
     <h2>ประวัติความเป็นมา</h2>
-    <p>ก่อตั้งขึ้นในปี พ.ศ. 2425 ในรัชสมัยรัชกาลที่ 5 เป็นโรงเรียนชายล้วนแห่งแรกของประเทศไทย และมีศิษย์เก่าที่มีชื่อเสียงจำนวนมาก</p>
+    <p>โรงเรียนสวนกุหลาบวิทยาลัย ก่อตั้งขึ้นในปี พ.ศ. 2425 ในรัชสมัยรัชกาลที่ 5 เป็นโรงเรียนชายล้วนแห่งแรกของประเทศไทย และมีศิษย์เก่าที่มีชื่อเสียงจำนวนมาก</p>
 </section>
 
-<section id="vision">
+<section>
     <h2>วิสัยทัศน์ และ พันธกิจ</h2>
     <p><strong>วิสัยทัศน์:</strong> พัฒนาผู้เรียนสู่ความเป็นเลิศทางวิชาการและคุณธรรม</p>
     <p><strong>พันธกิจ:</strong></p>
@@ -129,19 +97,19 @@ footer {
     </ul>
 </section>
 
-<section id="symbol">
+<section>
     <h2>สัญลักษณ์โรงเรียน</h2>
     <p>ดอกกุหลาบเป็นสัญลักษณ์แห่งความงดงาม ความเข้มแข็ง และความสามัคคี สีประจำโรงเรียนคือ ชมพู-ฟ้า</p>
 </section>
 
-<section id="building">
+<section>
     <h2>อาคารโรงเรียน</h2>
     <p>โรงเรียนมีอาคารเรียนที่ทันสมัย พร้อมสิ่งอำนวยความสะดวกครบครัน</p>
 </section>
 
-<section id="map">
+<section>
     <h2>แผนที่โรงเรียน</h2>
-    <p>ถนนตรีเพชร แขวงวังบูรพาภิรมย์ เขตพระนคร กรุงเทพมหานคร</p>
+    <p>ที่ตั้ง: ถนนตรีเพชร แขวงวังบูรพาภิรมย์ เขตพระนคร กรุงเทพมหานคร</p>
 </section>
 
 <footer>
